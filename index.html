@@ -7,6 +7,7 @@
   <meta name="description" content="Compre e venda roupas femininas com estilo. Moda acessível, sustentável e moderna. Grátis para baixar." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="favicon.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <script>
@@ -79,14 +80,6 @@
 </head>
 <body class="bg-white text-gray-900 antialiased">
 
-  <!-- Detecção de SO: CTA no topo (iOS → App Store, Android → Play) -->
-  <div id="os-smart-cta" class="hidden bg-gray-900 text-white text-sm md:text-base">
-    <div class="max-w-6xl mx-auto px-4 py-2.5 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-center sm:text-left">
-      <span id="os-smart-msg" class="text-gray-200"></span>
-      <a id="os-smart-link" href="#" class="inline-flex items-center gap-2 rounded-full bg-pink-500 px-4 py-1.5 text-sm font-semibold text-white hover:bg-pink-400 transition-colors shrink-0"></a>
-    </div>
-  </div>
-
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
     <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
       <a href="#" class="font-brand text-2xl sm:text-3xl font-semibold text-gray-900 leading-none">
@@ -125,8 +118,8 @@
           </ul>
           <div class="flex flex-col sm:flex-row gap-3 pt-2">
             <a id="hero-primary-download" href="#download" class="inline-flex items-center justify-center gap-3 rounded-full bg-pink-500 text-white px-8 py-4 text-base font-semibold hover:bg-pink-600 transition-colors shadow-lg shadow-pink-500/25">
-              <span id="hero-primary-icon" class="inline-flex shrink-0" aria-hidden="true">
-                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><path d="M12 18h.01"/><path d="M9 6h6"/></svg>
+              <span id="hero-primary-icon" class="inline-flex shrink-0 items-center justify-center text-[1.65rem] leading-none" aria-hidden="true">
+                <i class="fa-solid fa-mobile-screen-button"></i>
               </span>
               <span id="hero-primary-label">Instale já</span>
             </a>
@@ -297,23 +290,19 @@
       </p>
       <p id="download-os-hint" class="text-white/90 text-sm mb-8 max-w-lg mx-auto"></p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center">
-        <!-- App Store: logo Apple oficial (silhueta) + texto -->
+        <!-- App Store -->
         <a id="btn-app-store" href="#" rel="noopener noreferrer" target="_blank" aria-label="Baixar na App Store"
           class="inline-flex items-center justify-center gap-3 bg-black text-white px-6 py-3.5 rounded-xl hover:bg-gray-900 transition-colors border border-white/10 min-h-[3.5rem]">
-          <svg class="w-8 h-8 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-          </svg>
+          <span class="inline-flex shrink-0 items-center justify-center text-[2rem] leading-none" aria-hidden="true"><i class="fa-brands fa-app-store-ios"></i></span>
           <div class="text-left leading-tight">
             <p class="text-[10px] uppercase tracking-wide text-gray-400">Baixar na</p>
             <p class="text-lg font-semibold">App Store</p>
           </div>
         </a>
-        <!-- Google Play: ícone colorido (triângulos) -->
+        <!-- Google Play -->
         <a id="btn-google-play" href="#" rel="noopener noreferrer" target="_blank" aria-label="Disponível no Google Play"
           class="inline-flex items-center justify-center gap-3 bg-black text-white px-6 py-3.5 rounded-xl hover:bg-gray-900 transition-colors border border-white/10 min-h-[3.5rem]">
-          <svg class="w-8 h-8 shrink-0" viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="#00F076" d="M8 5v14l11-7L8 5z"/>
-          </svg>
+          <span class="inline-flex shrink-0 items-center justify-center text-[2rem] leading-none" aria-hidden="true"><i class="fa-brands fa-google-play"></i></span>
           <div class="text-left leading-tight">
             <p class="text-[10px] uppercase tracking-wide text-gray-400">Disponível no</p>
             <p class="text-lg font-semibold">Google Play</p>
@@ -479,9 +468,9 @@
         return 'other';
       }
 
-      var HERO_ICON_APPLE = '<svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>';
-      var HERO_ICON_PLAY = '<svg class="w-7 h-7" viewBox="0 0 24 24" aria-hidden="true"><path fill="#00F076" d="M8 5v14l11-7L8 5z"/></svg>';
-      var HERO_ICON_INSTALL = '<svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><path d="M12 18h.01"/><path d="M9 6h6"/></svg>';
+      var HERO_ICON_APPLE = '<i class="fa-brands fa-app-store-ios"></i>';
+      var HERO_ICON_PLAY = '<i class="fa-brands fa-google-play"></i>';
+      var HERO_ICON_INSTALL = '<i class="fa-solid fa-mobile-screen-button"></i>';
 
       function setHeroCta(iconHtml, label, href) {
         var heroIcon = document.getElementById('hero-primary-icon');
@@ -494,9 +483,6 @@
 
       function applyStoreLinks() {
         var os = detectMobileOS();
-        var bar = document.getElementById('os-smart-cta');
-        var msg = document.getElementById('os-smart-msg');
-        var link = document.getElementById('os-smart-link');
         var btnApple = document.getElementById('btn-app-store');
         var btnPlay = document.getElementById('btn-google-play');
         var hint = document.getElementById('download-os-hint');
@@ -510,10 +496,6 @@
         btnPlay.classList.remove('store-badge-primary');
 
         if (os === 'ios') {
-          bar.classList.remove('hidden');
-          msg.textContent = 'Parece que você está no iPhone ou iPad. O download certo é pela Apple:';
-          link.href = VISTTA_APP_STORE_URL;
-          link.textContent = 'Abrir na App Store';
           hint.textContent = 'Recomendado para você: App Store. Você também pode usar o Google Play em um aparelho Android.';
           btnApple.classList.add('store-badge-primary');
           setHeroCta(HERO_ICON_APPLE, 'Baixar na App Store', VISTTA_APP_STORE_URL);
@@ -521,10 +503,6 @@
           headerLink.textContent = 'App Store';
           footerCta.href = VISTTA_APP_STORE_URL;
         } else if (os === 'android') {
-          bar.classList.remove('hidden');
-          msg.textContent = 'Parece que você está no Android. Toque para ir direto à Google Play:';
-          link.href = VISTTA_PLAY_STORE_URL;
-          link.textContent = 'Abrir na Google Play';
           hint.textContent = 'Recomendado para você: Google Play. No iPhone, use a App Store.';
           btnPlay.classList.add('store-badge-primary');
           setHeroCta(HERO_ICON_PLAY, 'Baixar na Google Play', VISTTA_PLAY_STORE_URL);
@@ -532,7 +510,6 @@
           headerLink.textContent = 'Google Play';
           footerCta.href = VISTTA_PLAY_STORE_URL;
         } else {
-          bar.classList.add('hidden');
           hint.textContent = 'Toque em “Instale já” para ver os botões da App Store e da Google Play com os links oficiais.';
           setHeroCta(HERO_ICON_INSTALL, 'Instale já', '#download');
           headerLink.href = '#download';
