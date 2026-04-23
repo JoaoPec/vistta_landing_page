@@ -19,12 +19,20 @@
             body: ['Inter', 'sans-serif'],
           },
           colors: {
-            /** Paleta Vistta: #9ED3DC · #FEFD99 · #FCB7C7 · #CA6180 */
+            /** Base da marca (aqua): #9ED3DC */
             brand: {
               50: '#f4fbfc',
               100: '#e5f4f7',
+              200: '#cdeaf0',
+              300: '#b7e2e9',
+              400: '#9ED3DC',
+              500: '#77becb',
+              600: '#4ea6b8',
+              700: '#2e7f91',
+            },
+            /** Complementares (detalhe/ênfase): #FEFD99 · #FCB7C7 · #CA6180 */
+            accent: {
               200: '#FEFD99',
-              300: '#9ED3DC',
               400: '#FCB7C7',
               500: '#CA6180',
               600: '#b55372',
@@ -87,7 +95,7 @@
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
     <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
       <a href="#" class="font-brand text-2xl sm:text-3xl font-semibold text-gray-900 leading-none">
-        Vistt<span class="text-brand-500 not-italic font-semibold">a</span>
+        Vistt<span class="text-brand-400 not-italic font-semibold">a</span>
       </a>
       <nav class="hidden md:flex items-center gap-8">
         <a href="#beneficios" class="text-sm font-medium text-gray-500 hover:text-gray-900 transition-colors">Vantagens</a>
@@ -110,7 +118,7 @@
         <div class="space-y-6 opacity-0 animate-fade-up">
           <span class="inline-block text-xs font-semibold tracking-widest uppercase text-gray-600">100% grátis para começar</span>
           <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight" style="text-wrap:balance">
-            Seu brechó favorito, <span class="text-brand-300">no bolso</span>
+            Seu brechó favorito, <span class="text-accent-500">no bolso</span>
           </h2>
           <p class="text-gray-600 text-lg max-w-lg leading-relaxed">
             Peças únicas por menos, guarda-roupa em dia e <strong class="text-gray-800">zero complicação</strong> para vender o que você não usa. Instale em menos de um minuto e veja o que está perto de você.
@@ -127,7 +135,7 @@
               </span>
               <span id="hero-primary-label">Instale já</span>
             </a>
-            <a href="#how" class="inline-flex items-center justify-center rounded-full border-2 border-gray-200 text-gray-800 px-8 py-4 text-base font-medium hover:border-brand-300 hover:bg-brand-200/25 transition-colors">
+            <a href="#how" class="inline-flex items-center justify-center rounded-full border-2 border-gray-200 text-gray-800 px-8 py-4 text-base font-medium hover:border-brand-300 hover:bg-accent-200/35 transition-colors">
               Ver como funciona
             </a>
           </div>
@@ -142,7 +150,7 @@
           </div>
         </div>
         <div class="relative opacity-0 animate-scale-in anim-delay-2">
-          <div class="rounded-3xl overflow-hidden shadow-2xl shadow-brand-300/25">
+          <div class="rounded-3xl overflow-hidden shadow-2xl shadow-accent-400/25">
             <img src="https://images.unsplash.com/photo-1637228393246-c38a4b3d2011?w=900&q=80" alt="Araras com roupas e calçados em brechó — moda circular e segunda mão" class="w-full h-[400px] md:h-[500px] object-cover" width="900" height="500" loading="eager" />
           </div>
           <div class="absolute -bottom-4 -right-4 bg-white rounded-2xl p-4 shadow-lg border border-gray-100">
@@ -153,7 +161,7 @@
             <p class="text-xs text-gray-500">Anúncios de quem você pode confiar</p>
           </div>
           <div class="absolute -top-4 -left-4 bg-white rounded-2xl p-3 shadow-lg border border-gray-100">
-            <p class="text-sm font-medium text-gray-900">♻️ Economize até <span class="text-brand-300 font-bold">70%</span></p>
+            <p class="text-sm font-medium text-gray-900">♻️ Economize até <span class="text-accent-500 font-bold">70%</span></p>
           </div>
         </div>
       </div>
@@ -165,26 +173,26 @@
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center mb-14">
         <span class="text-xs font-semibold tracking-widest uppercase text-gray-600">Por que baixar hoje</span>
-        <h3 class="font-display text-3xl font-bold text-gray-900 mt-1">O que você ganha com o <span class="font-brand text-brand-300 font-semibold text-[1.15em] leading-none">Vistta</span></h3>
+        <h3 class="font-display text-3xl font-bold text-gray-900 mt-1">O que você ganha com o <span class="font-brand text-accent-500 font-semibold text-[1.15em] leading-none">Vistta</span></h3>
         <p class="text-gray-500 mt-3 max-w-2xl mx-auto">Menos intermediário, mais controle do seu dinheiro e do seu estilo — com a praticidade de um app feito para você.</p>
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-gradient-to-br from-brand-50 via-brand-200/20 to-white p-6 rounded-2xl border border-brand-300/35">
+        <div class="bg-gradient-to-br from-brand-50 via-accent-200/25 to-white p-6 rounded-2xl border border-accent-400/45">
           <div class="w-12 h-12 bg-brand-300/25 rounded-xl flex items-center justify-center mb-4 text-2xl" aria-hidden="true">💰</div>
           <h4 class="font-display text-lg font-semibold text-gray-900 mb-2">Preço que cabe no bolso</h4>
           <p class="text-sm text-gray-500">Peças de qualidade por uma fração do preço de loja. Você compra inteligente e ainda sobra para o próximo achado.</p>
         </div>
-        <div class="bg-gradient-to-br from-brand-50 via-brand-200/20 to-white p-6 rounded-2xl border border-brand-300/35">
+        <div class="bg-gradient-to-br from-brand-50 via-accent-200/25 to-white p-6 rounded-2xl border border-accent-400/45">
           <div class="w-12 h-12 bg-brand-300/25 rounded-xl flex items-center justify-center mb-4 text-2xl" aria-hidden="true">♻️</div>
           <h4 class="font-display text-lg font-semibold text-gray-900 mb-2">Moda sustentável</h4>
           <p class="text-sm text-gray-500">Cada peça reaproveitada evita desperdício. Você monta looks incríveis com consciência.</p>
         </div>
-        <div class="bg-gradient-to-br from-brand-50 via-brand-200/20 to-white p-6 rounded-2xl border border-brand-300/35">
+        <div class="bg-gradient-to-br from-brand-50 via-accent-200/25 to-white p-6 rounded-2xl border border-accent-400/45">
           <div class="w-12 h-12 bg-brand-300/25 rounded-xl flex items-center justify-center mb-4 text-2xl" aria-hidden="true">📍</div>
           <h4 class="font-display text-lg font-semibold text-gray-900 mb-2">Perto de você</h4>
           <p class="text-sm text-gray-500">Descubra achados únicos de quem vende na sua região. Combine retirada ou envio direto no chat.</p>
         </div>
-        <div class="bg-gradient-to-br from-brand-50 via-brand-200/20 to-white p-6 rounded-2xl border border-brand-300/35">
+        <div class="bg-gradient-to-br from-brand-50 via-accent-200/25 to-white p-6 rounded-2xl border border-accent-400/45">
           <div class="w-12 h-12 bg-brand-300/25 rounded-xl flex items-center justify-center mb-4 text-2xl" aria-hidden="true">🤝</div>
           <h4 class="font-display text-lg font-semibold text-gray-900 mb-2">Venda sem burocracia</h4>
           <p class="text-sm text-gray-500">Fotos, descrição e preço em poucos toques. Você conversa com quem tem interesse e fecha do seu jeito.</p>
@@ -194,7 +202,7 @@
   </section>
 
   <!-- COMO FUNCIONA (antes das peças = fluxo lógico) -->
-  <section id="how" class="bg-gradient-to-b from-brand-200/30 via-brand-50 to-brand-100/60 py-16 md:py-24">
+  <section id="how" class="bg-gradient-to-b from-accent-200/35 via-brand-50 to-brand-100/70 py-16 md:py-24">
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center mb-14">
         <span class="text-xs font-semibold tracking-widest uppercase text-gray-600">Em 3 passos</span>
@@ -284,10 +292,10 @@
   </section>
 
   <!-- DOWNLOAD -->
-  <section id="download" class="py-16 md:py-24 bg-gradient-to-br from-brand-50 via-brand-200/30 to-brand-100 ring-1 ring-inset ring-brand-300/30">
+  <section id="download" class="py-16 md:py-24 bg-gradient-to-br from-brand-50 via-accent-200/30 to-brand-100 ring-1 ring-inset ring-brand-300/30">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h3 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-        Seu próximo look está a <span class="text-brand-300">um toque</span>
+        Seu próximo look está a <span class="text-accent-500">um toque</span>
       </h3>
       <p class="text-gray-600 text-lg mb-2 max-w-xl mx-auto">
         Instale grátis, crie sua conta em segundos e já comece a salvar favoritos e conversar com quem vende por perto.
@@ -322,7 +330,7 @@
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center mb-14">
         <span class="text-xs font-semibold tracking-widest uppercase text-gray-600">Depoimentos</span>
-        <h3 class="font-display text-3xl font-bold text-gray-900 mt-1">O que <span class="text-brand-300 font-semibold">quem compra e vende</span> diz</h3>
+        <h3 class="font-display text-3xl font-bold text-gray-900 mt-1">O que <span class="text-accent-500 font-semibold">quem compra e vende</span> diz</h3>
       </div>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-gray-50 p-6 rounded-2xl">
@@ -381,7 +389,7 @@
   </section>
 
   <!-- FAQ -->
-  <section class="py-16 md:py-24 bg-gradient-to-b from-brand-100/70 to-brand-200/25">
+  <section class="py-16 md:py-24 bg-gradient-to-b from-brand-100/70 to-accent-200/25">
     <div class="max-w-3xl mx-auto px-4">
       <div class="text-center mb-14">
         <span class="text-xs font-semibold tracking-widest uppercase text-gray-600">Dúvidas</span>
@@ -433,7 +441,7 @@
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex flex-col md:flex-row items-center justify-between gap-6">
         <div class="text-center md:text-left">
-          <p class="font-brand text-2xl font-semibold text-gray-900 tracking-wide">Vistt<span class="text-brand-500">a</span></p>
+          <p class="font-brand text-2xl font-semibold text-gray-900 tracking-wide">Vistt<span class="text-brand-400">a</span></p>
           <p class="text-xs text-gray-500 mt-1">Moda circular, estilo infinito.</p>
           <a href="#download" class="inline-flex items-center rounded-full bg-gray-900 text-white px-4 py-2 text-sm font-semibold mt-3 hover:bg-gray-800 transition-colors">
             Baixar app
