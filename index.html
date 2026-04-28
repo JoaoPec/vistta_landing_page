@@ -32,13 +32,35 @@
               800: '#345c68',
               900: '#2f4e58',
             },
-            /** Cores de apoio baseadas no Aqua para profundidade e realce */
+            /**
+             * Adjacent/análogas ao aqua (para variar sem “brigar” com a marca)
+             * - `adjMint`: puxa levemente pro verde-menta
+             * - `adjBlue`: puxa levemente pro azul-bebê
+             */
+            adjMint: {
+              50: '#f1fbf7',
+              100: '#def6ec',
+              200: '#bfeadb',
+              300: '#9adcc7',
+              400: '#6fc8ae',
+              500: '#49b59a',
+              600: '#2f967d',
+              700: '#237563',
+            },
+            adjBlue: {
+              50: '#f2f7ff',
+              100: '#e3efff',
+              200: '#c7dfff',
+              300: '#a8caff',
+              400: '#7fb0ff',
+              500: '#5a94ff',
+              600: '#3d74f0',
+              700: '#2f59c7',
+            },
+            /** Complemento quente (bem pouco): rosa queimado */
             accent: {
-              200: '#dcf1f4',
-              400: '#9ed3dc',
-              500: '#438a9a',
-              600: '#39707e',
-              700: '#2f4e58',
+              400: '#FCB7C7',
+              500: '#CA6180',
             },
             gray: {
               100: '#F3F4F6',
@@ -114,21 +136,21 @@
   </header>
 
   <!-- HERO -->
-  <section class="bg-gradient-to-b from-brand-50 via-brand-100/50 to-white">
+  <section class="bg-gradient-to-b from-adjBlue-50 via-brand-50 to-white">
     <div class="max-w-6xl mx-auto px-4 py-16 md:py-24">
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div class="space-y-6 opacity-0 animate-fade-up">
-          <span class="inline-block text-xs font-semibold tracking-widest uppercase text-brand-600">100% grátis para começar</span>
+          <span class="inline-block text-xs font-semibold tracking-widest uppercase text-adjBlue-700">100% grátis para começar</span>
           <h2 class="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight" style="text-wrap:balance">
-            Seu brechó favorito, <span class="text-brand-500">no bolso</span>
+            Seu brechó favorito, <span class="text-adjMint-600">no bolso</span>
           </h2>
           <p class="text-gray-600 text-lg max-w-lg leading-relaxed">
             Peças únicas por menos, guarda-roupa em dia e <strong class="text-gray-800">zero complicação</strong> para vender o que você não usa. Instale em menos de um minuto e veja o que está perto de você.
           </p>
           <ul class="text-sm text-gray-600 space-y-2">
-            <li class="flex items-center gap-2"><span class="text-brand-400 font-bold">✓</span> Sem mensalidade e sem taxa de cadastro</li>
-            <li class="flex items-center gap-2"><span class="text-brand-400 font-bold">✓</span> Chat no app para combinar com segurança</li>
-            <li class="flex items-center gap-2"><span class="text-brand-400 font-bold">✓</span> Moda circular: você economiza e o planeta agradece</li>
+            <li class="flex items-center gap-2"><span class="text-adjMint-500 font-bold">✓</span> Sem mensalidade e sem taxa de cadastro</li>
+            <li class="flex items-center gap-2"><span class="text-adjMint-500 font-bold">✓</span> Chat no app para combinar com segurança</li>
+            <li class="flex items-center gap-2"><span class="text-adjMint-500 font-bold">✓</span> Moda circular: você economiza e o planeta agradece</li>
           </ul>
           <div class="flex flex-col sm:flex-row gap-3 pt-2">
             <a id="hero-primary-download" href="#download" class="inline-flex items-center justify-center gap-3 rounded-full bg-brand-700 text-white px-8 py-4 text-base font-semibold hover:bg-brand-800 transition-colors shadow-lg shadow-brand-700/25">
@@ -163,7 +185,7 @@
             <p class="text-xs text-gray-500">Anúncios de quem você pode confiar</p>
           </div>
           <div class="absolute -top-4 -left-4 bg-white rounded-2xl p-3 shadow-lg border border-brand-50">
-            <p class="text-sm font-medium text-gray-900">♻️ Economize até <span class="text-brand-600 font-bold">70%</span></p>
+            <p class="text-sm font-medium text-gray-900">♻️ Economize até <span class="text-accent-500 font-bold">70%</span></p>
           </div>
         </div>
       </div>
@@ -174,28 +196,28 @@
   <section id="beneficios" class="py-16 md:py-24 bg-white">
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center mb-14">
-        <span class="text-xs font-semibold tracking-widest uppercase text-brand-600">Por que baixar hoje</span>
-        <h3 class="font-display text-3xl font-bold text-gray-900 mt-1">O que você ganha com o <span class="font-brand text-brand-500 font-semibold text-[1.15em] leading-none">Vistta</span></h3>
+        <span class="text-xs font-semibold tracking-widest uppercase text-adjBlue-700">Por que baixar hoje</span>
+        <h3 class="font-display text-3xl font-bold text-gray-900 mt-1">O que você ganha com o <span class="font-brand text-adjMint-600 font-semibold text-[1.15em] leading-none">Vistta</span></h3>
         <p class="text-gray-500 mt-3 max-w-2xl mx-auto">Menos intermediário, mais controle do seu dinheiro e do seu estilo — com a praticidade de um app feito para você.</p>
       </div>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div class="bg-gradient-to-br from-brand-50 via-white to-white p-6 rounded-2xl border border-brand-100/60">
-          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4 text-2xl text-brand-600" aria-hidden="true">💰</div>
+          <div class="w-12 h-12 bg-adjBlue-100 rounded-xl flex items-center justify-center mb-4 text-2xl text-adjMint-600" aria-hidden="true">💰</div>
           <h4 class="font-display text-lg font-semibold text-gray-900 mb-2">Preço que cabe no bolso</h4>
           <p class="text-sm text-gray-500">Peças de qualidade por uma fração do preço de loja. Você compra inteligente e ainda sobra para o próximo achado.</p>
         </div>
         <div class="bg-gradient-to-br from-brand-50 via-white to-white p-6 rounded-2xl border border-brand-100/60">
-          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4 text-2xl text-brand-600" aria-hidden="true">♻️</div>
+          <div class="w-12 h-12 bg-adjBlue-100 rounded-xl flex items-center justify-center mb-4 text-2xl text-adjMint-600" aria-hidden="true">♻️</div>
           <h4 class="font-display text-lg font-semibold text-gray-900 mb-2">Moda sustentável</h4>
           <p class="text-sm text-gray-500">Cada peça reaproveitada evita desperdício. Você monta looks incríveis com consciência.</p>
         </div>
         <div class="bg-gradient-to-br from-brand-50 via-white to-white p-6 rounded-2xl border border-brand-100/60">
-          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4 text-2xl text-brand-600" aria-hidden="true">📍</div>
+          <div class="w-12 h-12 bg-adjBlue-100 rounded-xl flex items-center justify-center mb-4 text-2xl text-adjMint-600" aria-hidden="true">📍</div>
           <h4 class="font-display text-lg font-semibold text-gray-900 mb-2">Perto de você</h4>
           <p class="text-sm text-gray-500">Descubra achados únicos de quem vende na sua região. Combine retirada ou envio direto no chat.</p>
         </div>
         <div class="bg-gradient-to-br from-brand-50 via-white to-white p-6 rounded-2xl border border-brand-100/60">
-          <div class="w-12 h-12 bg-brand-100 rounded-xl flex items-center justify-center mb-4 text-2xl text-brand-600" aria-hidden="true">🤝</div>
+          <div class="w-12 h-12 bg-adjBlue-100 rounded-xl flex items-center justify-center mb-4 text-2xl text-adjMint-600" aria-hidden="true">🤝</div>
           <h4 class="font-display text-lg font-semibold text-gray-900 mb-2">Venda sem burocracia</h4>
           <p class="text-sm text-gray-500">Fotos, descrição e preço em poucos toques. Você conversa com quem tem interesse e fecha do seu jeito.</p>
         </div>
@@ -204,10 +226,10 @@
   </section>
 
   <!-- COMO FUNCIONA (antes das peças = fluxo lógico) -->
-  <section id="how" class="bg-gradient-to-b from-brand-50 via-white to-brand-50/50 py-16 md:py-24">
+  <section id="how" class="bg-gradient-to-b from-adjMint-50 via-white to-adjBlue-50 py-16 md:py-24">
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center mb-14">
-        <span class="text-xs font-semibold tracking-widest uppercase text-brand-600">Em 3 passos</span>
+        <span class="text-xs font-semibold tracking-widest uppercase text-adjBlue-700">Em 3 passos</span>
         <h3 class="font-display text-3xl font-bold text-gray-900 mt-1">Como funciona</h3>
       </div>
       <div class="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
@@ -284,7 +306,7 @@
   <section id="products" class="max-w-6xl mx-auto px-4 py-16 md:py-24">
     <div class="flex items-end justify-between mb-10">
       <div>
-        <span class="text-xs font-semibold tracking-widest uppercase text-brand-600">Inspire-se</span>
+        <span class="text-xs font-semibold tracking-widest uppercase text-adjBlue-700">Inspire-se</span>
         <h3 class="font-display text-3xl font-bold text-gray-900 mt-1">Peças em destaque</h3>
         <p class="text-gray-500 text-sm mt-1">Exemplos do tipo de anúncio que você encontra no app</p>
       </div>
@@ -294,10 +316,10 @@
   </section>
 
   <!-- DOWNLOAD -->
-  <section id="download" class="py-16 md:py-24 bg-gradient-to-br from-brand-50 via-white to-brand-100 ring-1 ring-inset ring-brand-200/50">
+  <section id="download" class="py-16 md:py-24 bg-gradient-to-br from-adjBlue-50 via-white to-adjMint-50 ring-1 ring-inset ring-adjBlue-100/70">
     <div class="max-w-4xl mx-auto px-4 text-center">
       <h3 class="font-display text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-        Seu próximo look está a <span class="text-brand-600">um toque</span>
+        Seu próximo look está a <span class="text-adjBlue-600">um toque</span>
       </h3>
       <p class="text-gray-600 text-lg mb-2 max-w-xl mx-auto">
         Instale grátis, crie sua conta em segundos e já comece a salvar favoritos e conversar com quem vende por perto.
@@ -330,12 +352,12 @@
   <section class="py-16 md:py-24 bg-white">
     <div class="max-w-6xl mx-auto px-4">
       <div class="text-center mb-14">
-        <span class="text-xs font-semibold tracking-widest uppercase text-brand-600">Depoimentos</span>
-        <h3 class="font-display text-3xl font-bold text-gray-900 mt-1">O que <span class="text-brand-500 font-semibold">quem compra e vende</span> diz</h3>
+        <span class="text-xs font-semibold tracking-widest uppercase text-adjBlue-700">Depoimentos</span>
+        <h3 class="font-display text-3xl font-bold text-gray-900 mt-1">O que <span class="text-adjMint-600 font-semibold">quem compra e vende</span> diz</h3>
       </div>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-gray-50 p-6 rounded-2xl">
-          <div class="flex items-center gap-1 mb-4 text-brand-400" aria-label="5 estrelas">
+          <div class="flex items-center gap-1 mb-4 text-adjBlue-600" aria-label="5 estrelas">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -352,7 +374,7 @@
           </div>
         </div>
         <div class="bg-gray-50 p-6 rounded-2xl">
-          <div class="flex items-center gap-1 mb-4 text-brand-400" aria-label="5 estrelas">
+          <div class="flex items-center gap-1 mb-4 text-adjBlue-600" aria-label="5 estrelas">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -369,7 +391,7 @@
           </div>
         </div>
         <div class="bg-gray-50 p-6 rounded-2xl">
-          <div class="flex items-center gap-1 mb-4 text-brand-400" aria-label="5 estrelas">
+          <div class="flex items-center gap-1 mb-4 text-adjBlue-600" aria-label="5 estrelas">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -390,31 +412,31 @@
   </section>
 
   <!-- FAQ -->
-  <section class="py-16 md:py-24 bg-gradient-to-b from-brand-50 to-white">
+  <section class="py-16 md:py-24 bg-gradient-to-b from-adjMint-50 to-white">
     <div class="max-w-3xl mx-auto px-4">
       <div class="text-center mb-14">
-        <span class="text-xs font-semibold tracking-widest uppercase text-brand-600">Dúvidas</span>
+        <span class="text-xs font-semibold tracking-widest uppercase text-adjBlue-700">Dúvidas</span>
         <h3 class="font-display text-3xl font-bold text-gray-900 mt-1">Perguntas frequentes</h3>
       </div>
       <div class="space-y-4">
-        <details class="bg-white rounded-xl p-4 cursor-pointer group shadow-sm border border-brand-50">
+        <details class="bg-white rounded-xl p-4 cursor-pointer group shadow-sm border border-adjMint-100">
           <summary class="flex items-center justify-between font-medium text-gray-900 list-none gap-2">
             O app é grátis?
-            <svg class="w-5 h-5 text-brand-400 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            <svg class="w-5 h-5 text-adjBlue-600 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
           </summary>
           <p class="text-gray-500 mt-3 text-sm">Sim. Baixar e criar conta no <span class="font-brand text-gray-700 font-medium">Vistta</span> é gratuito. Você só negocia valores diretamente com a outra pessoa na compra ou venda.</p>
         </details>
-        <details class="bg-white rounded-xl p-4 cursor-pointer group shadow-sm border border-brand-50">
+        <details class="bg-white rounded-xl p-4 cursor-pointer group shadow-sm border border-adjMint-100">
           <summary class="flex items-center justify-between font-medium text-gray-900 list-none gap-2">
             Como combino pagamento e entrega?
-            <svg class="w-5 h-5 text-brand-400 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            <svg class="w-5 h-5 text-adjBlue-600 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
           </summary>
           <p class="text-gray-500 mt-3 text-sm">Vocês combinam no chat — Pix, dinheiro na retirada ou outra forma que fizer sentido para as partes.</p>
         </details>
-        <details class="bg-white rounded-xl p-4 cursor-pointer group shadow-sm border border-brand-50">
+        <details class="bg-white rounded-xl p-4 cursor-pointer group shadow-sm border border-adjMint-100">
           <summary class="flex items-center justify-between font-medium text-gray-900 list-none gap-2">
             Preciso morar em uma cidade específica?
-            <svg class="w-5 h-5 text-brand-400 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+            <svg class="w-5 h-5 text-adjBlue-600 group-open:rotate-180 transition-transform shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
           </summary>
           <p class="text-gray-500 mt-3 text-sm">Não. O app pode ser usado em qualquer lugar do Brasil; o importante é combinar entrega ou retirada com quem está vendendo or comprando.</p>
         </details>
